@@ -16,6 +16,10 @@ module.exports = function(app, target)
     });
   });
 
+  app.get('/info', function(req, res){
+    res.end('running on: 10.80.161.30\nDB name: GlobalSW\nDB collections name: targetpeople');
+  });
+
   app.post('/upload', function(req, res){
     var form = new multiparty.Form();
     form.on('file', function(name,file){
