@@ -11,7 +11,7 @@ db.on('error', function(){
   console.log('Connection Faild!!');
 });
 db.once('open', function(){
-  console.log('Connected!!');
+  console.log('MongoDB Connected!!');
 });
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -21,5 +21,6 @@ var router = require('./routes')(app, target);
 
 var port = process.env.PORT || 80;
 var server = app.listen(port, function(){
-  console.log("Express Server is running...");
+  console.log("Server is running...");
+  console.log("10.80.161.30");
 });

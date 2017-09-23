@@ -17,9 +17,6 @@ module.exports = function(app, target)
   });
 
   app.post('/upload', function(req, res){
-    console.log(req.body);
-    // console.log(req.body.age);
-    // console.log(req.body.crime);
     var form = new multiparty.Form();
     form.on('file', function(name,file){
       var tmp_path = file.path;
