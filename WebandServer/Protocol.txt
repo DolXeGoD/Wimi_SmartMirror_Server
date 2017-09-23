@@ -1,0 +1,26 @@
+1. 타겟 추가
+POST-JSON
+Example:
+{
+	name: String,
+	age: Int,
+	crime: String,
+	image: 
+}
+
+2. 등록된 대상 보기
+GET-JSON
+Example:
+{
+	List
+}
+
+3. 타겟 지우기
+GET-String
+Example: _id
+
+4. 타겟 정보 업데이트
+미정
+
+5. 타겟 검색
+미정
