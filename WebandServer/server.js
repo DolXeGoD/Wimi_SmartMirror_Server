@@ -5,7 +5,7 @@ var target = require('./models/target');
 var mongoose = require('mongoose');
 
 // MongoDB연동
-mongoose.connect('mongodb://localhost:27017/GlobalSW');
+mongoose.connect('mongodb://wimi:2egWcpEJByLcDqw3sYbfStPE8fAkUNQvJjLigPRKCisJ0HXu0ti5onFS2yRzZvi7diQ3y5KaLrFiSwecJTRg8w==@wimi.documents.azure.com:10255/?ssl=true/GlobalSW');
 var db = mongoose.connection;
 db.on('error', function(){
   console.log('Connection Faild!!');
