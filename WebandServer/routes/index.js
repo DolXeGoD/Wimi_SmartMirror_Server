@@ -5,7 +5,7 @@ var mv = require('mv');
 module.exports = function(app, target)
 {
   app.get('/', function(req, res){
-    fs.readFile(__dirname+'/../Html/index.html', 'utf-8', function(error, data){
+    fs.readFile(__dirname+'/../Html/index_test.html', 'utf-8', function(error, data){
       if(error){
         res.writeHead(500, {'Content-Type': 'text/html'});
         res.end('500 Internal Server '+error);
